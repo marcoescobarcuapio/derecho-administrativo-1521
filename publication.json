@@ -1,7 +1,10 @@
 {
   "schema_version": 1,
-  "status": "prepared_pending_publication",
-  "publication_authority": false,
+  "status": "published_verified",
+  "publication_authority": true,
+  "verified_at": "2026-08-12",
+  "verified_public_urls": 35,
+  "repository_url": "https://github.com/marcoescobarcuapio/derecho-administrativo-1521",
   "author": "Marco Antonio Escobar Cuapio",
   "base_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/",
   "index": {
