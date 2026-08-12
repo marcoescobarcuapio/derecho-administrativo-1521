@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Materiales del curso</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path stroke="#003D79" d="M9 15h18c4 0 7 3 7 7v33c0-4-3-7-7-7H9zM55 15H41c-4 0-7 3-7 7v33c0-4 3-7 7-7h14z"/>
+    <path stroke="#D59F0F" d="M17 25h10M17 33h10M41 25h7M41 33h7"/>
+  </g>
+</svg>

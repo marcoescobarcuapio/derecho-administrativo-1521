@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "status": "prepared_pending_publication",
+  "publication_authority": false,
+  "author": "Marco Antonio Escobar Cuapio",
+  "base_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/",
+  "index": {
+    "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/",
+    "sha256": "a5a093e4fc23eb59d3f05d508bc6da97e8a8ce58bcba95e59e47bec3e71bf6e5"
+  },
+  "traceability_matrix": {
+    "html_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/Matriz_Trazabilidad_Presentaciones_DA1521.html",
+    "pdf_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/Matriz_Trazabilidad_Presentaciones_DA1521.pdf",
+    "html_sha256": "cedd6e35b26126cd948415374dcbc1d0e56b59677ce795d0c449be197420a796",
+    "pdf_sha256": "2af5a7b3b3856817a34572d64512ee60666d2cf8d7f1b3e5ff6a119bb1fe21e0"
+  },
+  "units": [
+    {
+      "unit": 1,
+      "title": "El Derecho Administrativo",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_01/",
+        "sha256": "e4f9c5eb7566ecdfc8b894be3e8315bb1c4c12406d717772a2505d6a9175cdc1"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_01/",
+        "sha256": "0a8055b89cf0a6e4a5a9b0a2af8b65aecaa2a602d91c56f35544be9f8dffa251"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_01/Unidad_01_Integral_DA1521.pdf",
+        "sha256": "23b31014c28f509d5e0ec6eafc646133e97b7d388b4a6e66cd62adb07b6398c2"
+      }
+    },
+    {
+      "unit": 2,
+      "title": "La Función Pública del Estado",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_02/",
+        "sha256": "3784abc128c4524c27157f6268885fc4b78663f4130fa573602c32d4044ba2e0"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_02/",
+        "sha256": "ecc3311645b6a12edba2b542584b6fa7b7afb9fa8d817d71ed0eda3cb946a11d"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_02/Unidad_02_Integral_DA1521.pdf",
+        "sha256": "9dd5fd6c661a09c9a380d7dbb5cf7e770774fe2950567d2cf4cb487392690ddb"
+      }
+    },
+    {
+      "unit": 3,
+      "title": "El Poder Ejecutivo y la Función Administrativa",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_03/",
+        "sha256": "3ddb9d3dba3408f63915e4a1a2a8793199e7d1dc5dc1f854ace0c9f6d08a68a7"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_03/",
+        "sha256": "c8ea94c91c9d24b478fa413007deb1b1b20e0f280e1b40fceb2b110465d98c14"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_03/Unidad_03_Integral_DA1521.pdf",
+        "sha256": "ba284f26579967be5ecbd082a45239c0a9042fb2ac425c857a6dbbecd0664673"
+      }
+    },
+    {
+      "unit": 4,
+      "title": "La Administración Pública",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_04/",
+        "sha256": "90cc18fc438912513bda9d98cc4e7c1dcdb5074f973ba77cd30f6919b545cb5b"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_04/",
+        "sha256": "04aff858543fdd05f503625020fd8343d30d926755c6a74536f111f2a1e44919"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_04/Unidad_04_Integral_DA1521.pdf",
+        "sha256": "6052c6c1848345a27a18b69275b9e18d94abd3d8b2dfff0205cfac72fc4f3825"
+      }
+    },
+    {
+      "unit": 5,
+      "title": "Legislación Administrativa",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_05/",
+        "sha256": "787a206c07242c459368a5e2c059653a43333f171b4ff5e4b3f1ffcb87bc6b07"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_05/",
+        "sha256": "8230fca80cc34c8319a966523b7985180a5ab52bd7c8e9aa63c7b3713c2ff2d5"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_05/Unidad_05_Integral_DA1521.pdf",
+        "sha256": "6a5fed4e7e36cac278adea410fdcb0157f1fdf646366f996192ae7717113cadc"
+      }
+    },
+    {
+      "unit": 6,
+      "title": "Ética pública, fiscalización y responsabilidades",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_06/",
+        "sha256": "530c1d6d423c38082190de8dae42d852b4225ae003a61f5a03ea9c3b2d9feefb"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_06/",
+        "sha256": "c29551fa3ef69104af5452b03a7e0a81b3a9daf671d8e30a6676c842aa67934e"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_06/Unidad_06_Integral_DA1521.pdf",
+        "sha256": "8b3e72799b6be6bb4154b3a34d8956b9a8b86a95db4d4132bf5635c5b5e349bf"
+      }
+    },
+    {
+      "unit": 7,
+      "title": "Patrimonio público en México",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_07/",
+        "sha256": "59b2cb76701997cb434aec102a2cb13d6559e066ccd9b5d566f3e12764edd41d"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_07/",
+        "sha256": "6cb92a9bce18da62b772b83f3791a0bc4e3bf0d84dfe6c1bfbc3f21919ecac88"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_07/Unidad_07_Integral_DA1521.pdf",
+        "sha256": "b6ef16dd9f333a8d6082574735e1e94be19e06a6c5146d4ef6cf4d6d8d9d30c1"
+      }
+    },
+    {
+      "unit": 8,
+      "title": "Información pública y protección de datos personales",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_08/",
+        "sha256": "c4febb8216da030be2b642395f3acfdd0ddd3a41471c6caef9488e7f7ca05101"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_08/",
+        "sha256": "4333230d8783d4cf149dbc6db188744539569ee5ab3ecea5b804503a2a1cc9d3"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_08/Unidad_08_Integral_DA1521.pdf",
+        "sha256": "3aa31b2b8482d75a46ca3a5c799d14bd15f6628ec498465b7242f5ae4ec28fc5"
+      }
+    },
+    {
+      "unit": 9,
+      "title": "Participación ciudadana en la administración y las políticas públicas",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_09/",
+        "sha256": "5f102137c0d97d99bf33e1aea0fdafae30b8d058f9a853cfca4749da45a204c0"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_09/",
+        "sha256": "6ba92f7530352e985024dcc2502353423f3521720a4c0b024b8aa68de8891682"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_09/Unidad_09_Integral_DA1521.pdf",
+        "sha256": "790c77ee183b09f5392aa28e553b088cf55878302e3253021ff8fd5ede9445ad"
+      }
+    },
+    {
+      "unit": 10,
+      "title": "Responsabilidad patrimonial del Estado",
+      "author": "Marco Antonio Escobar Cuapio",
+      "integral_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_10/",
+        "sha256": "2982f426c67f5b5d5ebb88c4705fc01771a0272849d40826aa3c2b6214d2b4d4"
+      },
+      "synthesis_html": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_10/",
+        "sha256": "a85c4d4c5ae4adf36b7a5cde359f14370875e23f75f8d382ac074404e3d55bf2"
+      },
+      "pdf": {
+        "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_10/Unidad_10_Integral_DA1521.pdf",
+        "sha256": "0af2021ed0894be5c56d1e1cc20168188ffd707ca22f5b47a402462b5a67d3b3"
+      }
+    }
+  ],
+  "presentation_index": {
+    "docx_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/documentos/Indice_Presentaciones_DA1521_2027-1.docx",
+    "pdf_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/documentos/Indice_Presentaciones_DA1521_2027-1.pdf",
+    "docx_sha256": "922b74c98122198410e3f311e2cc1336d59524d1409d24a3e8e6adb86d63f4d1",
+    "pdf_sha256": "c44eb3e8a3e8cc0a8a5905f089ee3d705e619b56b3b11dee7af73841c062a224"
+  }
+}

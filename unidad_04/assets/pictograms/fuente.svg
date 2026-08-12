@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Fuente jurídica</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path stroke="#003D79" d="M12 53h40M17 47h30M21 47V25m11 22V25m11 22V25M13 20h38L32 9z"/>
+    <circle cx="32" cy="17" r="2" fill="#D59F0F" stroke="#D59F0F"/>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Método jurídico</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path stroke="#003D79" d="M15 9h25l9 9v37H15z"/>
+    <path stroke="#003D79" d="M40 9v10h9M23 29h18M23 37h11"/>
+    <circle cx="41" cy="43" r="8" stroke="#D59F0F"/>
+    <path stroke="#D59F0F" d="m47 49 6 6"/>
+  </g>
+</svg>

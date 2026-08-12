@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Ruta de aprendizaje</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <path stroke="#003D79" d="M13 48c0-8 9-8 9-16s-9-8-9-16M51 16c0 8-9 8-9 16s9 8 9 16"/>
+    <circle cx="13" cy="14" r="5" stroke="#D59F0F"/>
+    <circle cx="51" cy="50" r="5" stroke="#D59F0F"/>
+    <path stroke="#003D79" d="M27 32h10m-5-5 5 5-5 5"/>
+  </g>
+</svg>
