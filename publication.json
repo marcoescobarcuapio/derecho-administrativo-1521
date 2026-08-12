@@ -1,21 +1,18 @@
 {
   "schema_version": 1,
-  "status": "published_verified",
-  "publication_authority": true,
-  "verified_at": "2026-08-12",
-  "verified_public_urls": 35,
-  "repository_url": "https://github.com/marcoescobarcuapio/derecho-administrativo-1521",
+  "status": "prepared_pending_publication",
+  "publication_authority": false,
   "author": "Marco Antonio Escobar Cuapio",
   "base_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/",
   "index": {
     "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/",
-    "sha256": "a5a093e4fc23eb59d3f05d508bc6da97e8a8ce58bcba95e59e47bec3e71bf6e5"
+    "sha256": "5d11372ce5c91d1e6494e00371083a8073cc2e1c387cd6108fbdf6936b3dd848"
   },
   "traceability_matrix": {
     "html_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/Matriz_Trazabilidad_Presentaciones_DA1521.html",
     "pdf_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/Matriz_Trazabilidad_Presentaciones_DA1521.pdf",
-    "html_sha256": "cedd6e35b26126cd948415374dcbc1d0e56b59677ce795d0c449be197420a796",
-    "pdf_sha256": "2af5a7b3b3856817a34572d64512ee60666d2cf8d7f1b3e5ff6a119bb1fe21e0"
+    "html_sha256": "c904314b682696ccdb57618c80958a55e2e905eb2e58ea5652fa1d205497186f",
+    "pdf_sha256": "f3468b7b178e60f5c185f9b14bc0b83244cf0018ff56f6e10d1f5e30c51e4de2"
   },
   "units": [
     {
@@ -24,15 +21,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_01/",
-        "sha256": "e4f9c5eb7566ecdfc8b894be3e8315bb1c4c12406d717772a2505d6a9175cdc1"
+        "sha256": "8983c0895cf489dfd826033fd3e57398af0aca60e709acdafe020606dcc9e0ac"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_01/",
-        "sha256": "0a8055b89cf0a6e4a5a9b0a2af8b65aecaa2a602d91c56f35544be9f8dffa251"
+        "sha256": "2b0db9624a4eb332e5b6897cd566c35e6f87cf7133147df7104e4d15877b4d5d"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_01/Unidad_01_Integral_DA1521.pdf",
-        "sha256": "23b31014c28f509d5e0ec6eafc646133e97b7d388b4a6e66cd62adb07b6398c2"
+        "sha256": "2f614494f9d6d58f04f13fa1281eecc87275c8e5931ac4da2bc1035d42e73e93"
       }
     },
     {
@@ -41,15 +38,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_02/",
-        "sha256": "3784abc128c4524c27157f6268885fc4b78663f4130fa573602c32d4044ba2e0"
+        "sha256": "83c97602515a8370df14840c1d9e6c782f670bc947c69b508c8f542b630e5ece"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_02/",
-        "sha256": "ecc3311645b6a12edba2b542584b6fa7b7afb9fa8d817d71ed0eda3cb946a11d"
+        "sha256": "6c1b18d0179d7222097269d31e1e9afa95deb4a1b2917c788b0aa78a6fcf6a4a"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_02/Unidad_02_Integral_DA1521.pdf",
-        "sha256": "9dd5fd6c661a09c9a380d7dbb5cf7e770774fe2950567d2cf4cb487392690ddb"
+        "sha256": "c41f9cff781619dbf50b340152fefda31a07f5622830edf0fe941339a9e71f30"
       }
     },
     {
@@ -58,15 +55,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_03/",
-        "sha256": "3ddb9d3dba3408f63915e4a1a2a8793199e7d1dc5dc1f854ace0c9f6d08a68a7"
+        "sha256": "e8e1b932a486f0834e77033d79a4e0b2359d41e2d84e1cdb616f7aa17adcb89f"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_03/",
-        "sha256": "c8ea94c91c9d24b478fa413007deb1b1b20e0f280e1b40fceb2b110465d98c14"
+        "sha256": "5578f4dd6547fe41f8911b413946b5192c91891113e498bb9b6bdbebf5448cfc"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_03/Unidad_03_Integral_DA1521.pdf",
-        "sha256": "ba284f26579967be5ecbd082a45239c0a9042fb2ac425c857a6dbbecd0664673"
+        "sha256": "6c80365880fea32cf2a29dc07d92929a06d3a343d3634b00f0bc847af746a4c2"
       }
     },
     {
@@ -75,15 +72,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_04/",
-        "sha256": "c828b2ae3df96e31eb5e1b0c21e9aeb1bcc8b45dc5cd4c406ba8892ba048b46d"
+        "sha256": "3df463d789c43aebaefecb0d74abf5a946d5f8c871df9832319de0540cdedb61"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_04/",
-        "sha256": "04aff858543fdd05f503625020fd8343d30d926755c6a74536f111f2a1e44919"
+        "sha256": "db592bb4a583abd0aa914b761929916fdffa9f41cac05ca786e00ec1eb7fc3dc"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_04/Unidad_04_Integral_DA1521.pdf",
-        "sha256": "cb377cdef85ccb8c50e70f27e7579dd2e4c5270b13b7dbbb4399ee74f4a7da54"
+        "sha256": "2298d37ce00adc16c396c92bd9dc026bd3edd44b685ba8135d3f1d1c943aad49"
       }
     },
     {
@@ -92,15 +89,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_05/",
-        "sha256": "787a206c07242c459368a5e2c059653a43333f171b4ff5e4b3f1ffcb87bc6b07"
+        "sha256": "6097dbbb559d3ce0afcb98095a2777cefa09d22a8440c08067faa8cbb8861c58"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_05/",
-        "sha256": "8230fca80cc34c8319a966523b7985180a5ab52bd7c8e9aa63c7b3713c2ff2d5"
+        "sha256": "fec4fa75e6ac5aa03980156077cfc5c470b463adf137b300ef1eb3e0d202630b"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_05/Unidad_05_Integral_DA1521.pdf",
-        "sha256": "6a5fed4e7e36cac278adea410fdcb0157f1fdf646366f996192ae7717113cadc"
+        "sha256": "754ec6594756631bcd57bb1dce9cc6fc76de3d7ced42131275291b057bcdad62"
       }
     },
     {
@@ -109,15 +106,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_06/",
-        "sha256": "530c1d6d423c38082190de8dae42d852b4225ae003a61f5a03ea9c3b2d9feefb"
+        "sha256": "18410db5d9ebebdd56220902499c1b581cb7ad4bb248da0b689f2d3af0979736"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_06/",
-        "sha256": "c29551fa3ef69104af5452b03a7e0a81b3a9daf671d8e30a6676c842aa67934e"
+        "sha256": "88e70a9e2126d6542faf37a960f70d85195b581ebd71a2d6723def34e1e892a6"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_06/Unidad_06_Integral_DA1521.pdf",
-        "sha256": "8b3e72799b6be6bb4154b3a34d8956b9a8b86a95db4d4132bf5635c5b5e349bf"
+        "sha256": "ae9377d25edd3d25bb173872c53190ffbabc024113de2beafefb7d921cb5fad9"
       }
     },
     {
@@ -126,15 +123,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_07/",
-        "sha256": "59b2cb76701997cb434aec102a2cb13d6559e066ccd9b5d566f3e12764edd41d"
+        "sha256": "d4d96921b2d7b2eec66f05f78ca31703644082b953a847b6cbe15382e5d19412"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_07/",
-        "sha256": "6cb92a9bce18da62b772b83f3791a0bc4e3bf0d84dfe6c1bfbc3f21919ecac88"
+        "sha256": "b62d01c590c4445853085c3119379d923de40a8c6f15327f91dcffccda26706a"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_07/Unidad_07_Integral_DA1521.pdf",
-        "sha256": "b6ef16dd9f333a8d6082574735e1e94be19e06a6c5146d4ef6cf4d6d8d9d30c1"
+        "sha256": "9c32f5dd68161974ae3a98b42a518b689a26a52da573c3f347ed79ca3b2a5b18"
       }
     },
     {
@@ -143,15 +140,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_08/",
-        "sha256": "c4febb8216da030be2b642395f3acfdd0ddd3a41471c6caef9488e7f7ca05101"
+        "sha256": "1e201528d0b742efea1fce80e74cf88a98df1732a127d4d15c71a5773a9ef108"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_08/",
-        "sha256": "4333230d8783d4cf149dbc6db188744539569ee5ab3ecea5b804503a2a1cc9d3"
+        "sha256": "959cd85390e70f93704163e130532e38dc73342b686fd7f829787d9a858ecbf1"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_08/Unidad_08_Integral_DA1521.pdf",
-        "sha256": "3aa31b2b8482d75a46ca3a5c799d14bd15f6628ec498465b7242f5ae4ec28fc5"
+        "sha256": "e436fc0fd6edb975c30b52366d5f8278f391dd1533ce477b4236b68556c80d8f"
       }
     },
     {
@@ -160,15 +157,15 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_09/",
-        "sha256": "5f102137c0d97d99bf33e1aea0fdafae30b8d058f9a853cfca4749da45a204c0"
+        "sha256": "b7e53e5a3110f0269559c6dcaa4b46ea4e110245bfeb51f76b4ec93c2f1d6e47"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_09/",
-        "sha256": "6ba92f7530352e985024dcc2502353423f3521720a4c0b024b8aa68de8891682"
+        "sha256": "d54a3ef1b6d98c665fa35b82daff2f50c4d707de1ed7f3336505ab6c9f309a34"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_09/Unidad_09_Integral_DA1521.pdf",
-        "sha256": "790c77ee183b09f5392aa28e553b088cf55878302e3253021ff8fd5ede9445ad"
+        "sha256": "b6807695c2d0c5698f5dca0f14bba61beb83746be683b874a3536afd343be042"
       }
     },
     {
@@ -177,22 +174,22 @@
       "author": "Marco Antonio Escobar Cuapio",
       "integral_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_10/",
-        "sha256": "2982f426c67f5b5d5ebb88c4705fc01771a0272849d40826aa3c2b6214d2b4d4"
+        "sha256": "ee60c51e7f350d83bc3e609129d7f6c9a8cf43e7f818f28d1bb0535d70524f06"
       },
       "synthesis_html": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/unidad_10/",
-        "sha256": "a85c4d4c5ae4adf36b7a5cde359f14370875e23f75f8d382ac074404e3d55bf2"
+        "sha256": "2af3a6901f4174546b9ace635e297a01051776c4ec5b6abab8ec75469ca2cc31"
       },
       "pdf": {
         "url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/integral/unidad_10/Unidad_10_Integral_DA1521.pdf",
-        "sha256": "0af2021ed0894be5c56d1e1cc20168188ffd707ca22f5b47a402462b5a67d3b3"
+        "sha256": "ce4c749ac2f32135e934a0a39d7673b083104f01bc3c50b7d6589f2d8acfafaf"
       }
     }
   ],
   "presentation_index": {
     "docx_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/documentos/Indice_Presentaciones_DA1521_2027-1.docx",
     "pdf_url": "https://marcoescobarcuapio.github.io/derecho-administrativo-1521/documentos/Indice_Presentaciones_DA1521_2027-1.pdf",
-    "docx_sha256": "922b74c98122198410e3f311e2cc1336d59524d1409d24a3e8e6adb86d63f4d1",
-    "pdf_sha256": "c44eb3e8a3e8cc0a8a5905f089ee3d705e619b56b3b11dee7af73841c062a224"
+    "docx_sha256": "a41516b403b5d38bf1db8279447c01795e894cbc5e295c19b8d35b3f5a0c27da",
+    "pdf_sha256": "44273d2ab41c8e70edae6fa22d8e06370de0303e8b079f5bb4b85ba3896dad31"
   }
 }

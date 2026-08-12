@@ -13,7 +13,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(145deg,#eef3f7 0%,#fff 42%,#f7f2e6 100%);color:var(--ink);font-family:Montserrat,Arial,sans-serif;line-height:1.5}
 a{color:inherit}.institutional-header{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:26px 0 20px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid rgba(0,61,121,.18)}
 .brand-lockup{display:flex;align-items:center;gap:18px}.brand-lockup img{display:block;max-width:150px;max-height:52px;object-fit:contain}.brand-rule{width:1px;height:42px;background:var(--gold)}.course-lockup{text-align:right}.course-lockup span{display:block;color:var(--blue);font-size:.72rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}.course-lockup strong{font-size:.96rem;color:var(--deep)}
-main{width:min(1180px,calc(100% - 40px));margin:0 auto 64px}.hero{padding:72px 0 52px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);gap:48px;align-items:end}.kicker{margin:0 0 14px;color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.hero h1{margin:0;color:var(--deep);font-size:clamp(2.35rem,5vw,4.6rem);line-height:1.02;letter-spacing:-.045em;max-width:850px}.hero .lead{margin:22px 0 0;max-width:780px;color:var(--muted);font-size:1.08rem}.hero-note{padding:24px;border-left:4px solid var(--gold);background:rgba(255,255,255,.75);box-shadow:0 18px 48px rgba(0,40,85,.08)}.hero-note strong{display:block;color:var(--deep);font-size:1.15rem}.hero-note p{margin:8px 0 0;color:var(--muted);font-size:.9rem}.catalog-docs{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.catalog-docs a{display:inline-flex;align-items:center;min-height:44px;padding:9px 12px;background:var(--deep);color:#fff;text-decoration:none;font-size:.76rem;font-weight:760}.catalog-docs a:focus-visible,.catalog-docs a:hover{background:var(--blue);outline:3px solid rgba(213,159,15,.45);outline-offset:2px}
+main{width:min(1180px,calc(100% - 40px));margin:0 auto 64px}.hero{padding:72px 0 52px;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);gap:48px;align-items:end}.kicker{margin:0 0 14px;color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.hero h1{margin:0;color:var(--deep);font-size:clamp(2.35rem,5vw,4.6rem);line-height:1.02;letter-spacing:-.045em;max-width:850px}.hero .lead{margin:22px 0 0;max-width:780px;color:var(--muted);font-size:1.08rem}.hero-note{padding:24px;border-left:4px solid var(--gold);background:rgba(255,255,255,.75);box-shadow:0 18px 48px rgba(0,40,85,.08)}.hero-note strong{display:block;color:var(--deep);font-size:1.15rem}.hero-note p{margin:8px 0 0;color:var(--muted);font-size:.9rem}
 .guide{margin:0 0 30px;padding:20px 24px;background:var(--deep);color:#fff;display:flex;gap:28px;align-items:center}.guide strong{color:#fff}.guide p{margin:0;color:#e6eef7;font-size:.9rem}
 .units{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.unit-card{position:relative;overflow:hidden;background:rgba(255,255,255,.96);border:1px solid var(--line);border-top:5px solid var(--blue);padding:28px;box-shadow:0 14px 40px rgba(0,40,85,.07)}.unit-card::after{content:attr(data-number);position:absolute;right:14px;top:-18px;color:rgba(0,61,121,.055);font-size:8rem;font-weight:850;line-height:1}.unit-card>*{position:relative;z-index:1}.unit-heading{display:flex;align-items:flex-start;gap:16px}.unit-number{flex:0 0 auto;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--blue);color:#fff;font-size:.84rem;font-weight:800}.unit-card h2{margin:0;color:var(--deep);font-size:1.35rem;line-height:1.18}.motif-name{display:block;margin-top:7px;color:var(--gold);font-size:.73rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.motif-description{margin:18px 0;color:var(--muted);font-size:.91rem;min-height:44px}.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.links a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 12px;border:1px solid var(--blue);text-decoration:none;font-size:.78rem;font-weight:760;text-align:center;transition:background .2s,color .2s,transform .2s}.links a:hover,.links a:focus-visible{background:var(--blue);color:#fff;transform:translateY(-2px);outline:3px solid rgba(213,159,15,.45);outline-offset:2px}.links .integral-link{background:var(--blue);color:#fff}.links .sources-link{border-color:var(--gold);color:#795700}
 footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:.75rem}footer strong{color:var(--deep)}
@@ -31,17 +31,17 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
   <div class="course-lockup"><span>Colección de presentaciones</span><strong>Derecho Administrativo 1521</strong></div>
 </header>
 <main>
-  <section class="hero" aria-labelledby="titulo-indice"><div><p class="kicker">Curso 2027-1 · Facultad de Derecho</p><h1 id="titulo-indice"><strong>Índice de presentaciones</strong></h1><p class="lead">Dos formas de recorrer cada unidad. La versión integral conserva el desarrollo completo, la procedencia histórica y las fuentes de consulta. La síntesis para clase reúne los puntos esenciales para la exposición docente.</p></div><aside class="hero-note"><strong>10 unidades · 10 motivos visuales</strong><p>Cada unidad mantiene la identidad gráfica UNAM y utiliza una organización visual propia para favorecer la comprensión.</p><nav class="catalog-docs" aria-label="Descargar índice documental"><a href="documentos/Indice_Presentaciones_DA1521_2027-1.pdf">Descargar índice PDF</a><a href="documentos/Indice_Presentaciones_DA1521_2027-1.docx">Descargar índice DOCX</a></nav></aside></section>
+  <section class="hero" aria-labelledby="titulo-indice"><div><p class="kicker">Curso 2027-1 · Facultad de Derecho</p><h1 id="titulo-indice">Dos formas de recorrer cada unidad</h1><p class="lead">La versión integral ofrece el desarrollo completo y sus fuentes de consulta. La síntesis para clase reúne los puntos esenciales para la exposición docente.</p></div><aside class="hero-note"><strong>10 unidades · 10 motivos visuales</strong><p>Cada unidad mantiene la identidad gráfica UNAM y utiliza una organización visual propia para favorecer la comprensión.</p></aside></section>
   <section class="guide" aria-label="Guía de uso"><strong>¿Qué versión elegir?</strong><p>Use la versión integral para estudiar, verificar fuentes o imprimir. Use la síntesis para una revisión breve durante la clase.</p></section>
   <section class="units" aria-label="Unidades del curso">
 <article class="unit-card" data-number="01">
-  <div class="unit-heading"><span class="unit-number">01</span><div><h2>El Derecho Administrativo</h2><span class="motif-name">Archivo histórico</span></div></div>
+  <div class="unit-heading"><span class="unit-number">01</span><div><h2>El Derecho Administrativo</h2><span class="motif-name">Historia administrativa</span></div></div>
   <p class="motif-description">Una línea de lectura que sitúa antecedentes, fuentes y principios en su contexto histórico.</p>
   <nav class="links" aria-label="Materiales de la Unidad 1">
     <a class="integral-link" href="integral/unidad_01/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_01/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_01/Unidad_01_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_01/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_01/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="02">
@@ -51,7 +51,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_02/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_02/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_02/Unidad_02_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_02/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_02/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="03">
@@ -61,7 +61,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_03/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_03/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_03/Unidad_03_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_03/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_03/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="04">
@@ -71,7 +71,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_04/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_04/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_04/Unidad_04_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_04/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_04/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="05">
@@ -81,7 +81,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_05/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_05/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_05/Unidad_05_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_05/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_05/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="06">
@@ -91,7 +91,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_06/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_06/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_06/Unidad_06_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_06/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_06/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="07">
@@ -101,7 +101,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_07/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_07/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_07/Unidad_07_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_07/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_07/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="08">
@@ -111,7 +111,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_08/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_08/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_08/Unidad_08_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_08/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_08/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="09">
@@ -121,7 +121,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_09/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_09/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_09/Unidad_09_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_09/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_09/index.html#referencias">Fuentes</a>
   </nav>
 </article>
 <article class="unit-card" data-number="10">
@@ -131,7 +131,7 @@ footer{width:min(1180px,calc(100% - 40px));margin:0 auto;padding:24px 0 36px;bor
     <a class="integral-link" href="integral/unidad_10/index.html">Versión integral</a>
     <a class="synthesis-link" href="unidad_10/index.html">Síntesis para clase</a>
     <a class="pdf-link" href="integral/unidad_10/Unidad_10_Integral_DA1521.pdf">PDF integral</a>
-    <a class="sources-link" href="integral/unidad_10/index.html#referencias-apa-7">Fuentes APA 7</a>
+    <a class="sources-link" href="integral/unidad_10/index.html#referencias">Fuentes</a>
   </nav>
 </article>
   </section>

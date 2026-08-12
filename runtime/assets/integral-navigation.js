@@ -14,7 +14,8 @@
   const narrowQuery = window.matchMedia("(max-width: 820px)");
   const coarseQuery = window.matchMedia("(pointer: coarse)");
   const lecturaParameter = new URL(location.href).searchParams.get("lectura");
-  const MOTION_MS = 560;
+  const MOTION_MS = 760;
+  const EXIT_MS = 260;
   const fitGenerations = new WeakMap();
   let activeIndex = 0;
   let transitionLocked = false;
@@ -25,6 +26,7 @@
   let lastTrigger = null;
   let readingMode = false;
   const controls = document.querySelector(".presentation-controls");
+  const liveStatus = document.getElementById("live-status");
   const readingButton = document.createElement("button");
   readingButton.type = "button";
   readingButton.className = "reading-toggle";
@@ -41,7 +43,7 @@
   ].filter(Boolean);
   const backgroundState = new Map();
 
-  const clamp = (value) => Math.max(0, Math.min(slides.length - 1, value));
+  const wrap = (value) => ((value % slides.length) + slides.length) % slides.length;
   const indexForHash = () => {
     const id = decodeURIComponent(location.hash.slice(1));
     const found = slides.findIndex((slide) => slide.id === id);
@@ -188,7 +190,7 @@
   };
 
   const update = (index, focusHeading) => {
-    activeIndex = clamp(index);
+    activeIndex = wrap(index);
     slides.forEach((slide, position) => {
       const active = position === activeIndex;
       slide.dataset.active = active ? "true" : "false";
@@ -211,6 +213,16 @@
     }
   };
 
+  const conceptAnchor = (slide) =>
+    slide?.querySelector(".theme-anchor,.content-block,h2,.bibliography-body") || null;
+
+  const clearTransitionClasses = () => {
+    slides.forEach((slide) => {
+      slide.classList.remove("concept-exit", "concept-enter", "concept-settle");
+      conceptAnchor(slide)?.classList.remove("concept-anchor");
+    });
+  };
+
   const flushQueue = () => {
     transitionLocked = false;
     if (pendingIndex !== null && pendingIndex !== activeIndex) {
@@ -223,7 +235,7 @@
   };
 
   const goTo = (index, focusHeading = false) => {
-    const target = clamp(index);
+    const target = wrap(index);
     if (transitionLocked) {
       pendingIndex = target;
       return;
@@ -233,8 +245,35 @@
       return;
     }
     transitionLocked = true;
-    update(target, focusHeading);
-    window.setTimeout(flushQueue, motionQuery.matches || readingMode ? 0 : MOTION_MS);
+    const wrappedForward = activeIndex === slides.length - 1 && target === 0;
+    const immediate = motionQuery.matches || readingMode;
+    const outgoing = slides[activeIndex];
+    const outgoingAnchor = conceptAnchor(outgoing);
+    if (immediate) {
+      update(target, focusHeading);
+      if (wrappedForward && liveStatus) liveStatus.textContent = "Fin de la unidad. Regreso al inicio.";
+      flushQueue();
+      return;
+    }
+    clearTransitionClasses();
+    outgoing.classList.add("concept-exit");
+    outgoingAnchor?.classList.add("concept-anchor");
+    window.setTimeout(() => {
+      update(target, focusHeading);
+      const incoming = slides[target];
+      const incomingAnchor = conceptAnchor(incoming);
+      incoming.classList.add("concept-enter");
+      incomingAnchor?.classList.add("concept-anchor");
+      requestAnimationFrame(() => {
+        incoming.classList.add("concept-settle");
+        incoming.classList.remove("concept-enter");
+      });
+      if (wrappedForward && liveStatus) liveStatus.textContent = "Fin de la unidad. Regreso al inicio.";
+      window.setTimeout(() => {
+        clearTransitionClasses();
+        flushQueue();
+      }, MOTION_MS - EXIT_MS);
+    }, EXIT_MS);
   };
 
   const closeMap = (restoreFocus = true) => {

@@ -16,6 +16,8 @@
   const progressText = document.getElementById("progress-text");
   const progressFill = document.getElementById("progress-fill");
   const touchLayout = window.matchMedia("(max-width: 1023px), (hover: none) and (pointer: coarse)");
+  const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const MOTION_MS = 760;
   let mapVisible = false;
   let pointerStart = null;
   let movementLocked = false;
@@ -92,13 +94,26 @@
     document.body.classList.remove("map-view");
     mapToggle.setAttribute("aria-pressed", "false");
     const previousIndex = deck.index();
+    const previousStep = steps[previousIndex];
+    const previousAnchor = previousStep && previousStep.querySelector(".title-with-pictogram,.topic-layout,.atlas ol,.reference-list");
+    previousStep && previousStep.classList.add("concept-exit");
+    previousAnchor && previousAnchor.classList.add("concept-anchor");
     const step = deck.goto(target);
     if (!step) return;
+    const incomingAnchor = step.querySelector(".title-with-pictogram,.topic-layout,.atlas ol,.reference-list");
+    step.classList.add("concept-enter");
+    incomingAnchor && incomingAnchor.classList.add("concept-anchor");
+    window.requestAnimationFrame(function () { step.classList.remove("concept-enter"); });
+    window.setTimeout(function () {
+      previousStep && previousStep.classList.remove("concept-exit");
+      previousAnchor && previousAnchor.classList.remove("concept-anchor");
+      incomingAnchor && incomingAnchor.classList.remove("concept-anchor");
+    }, motionQuery.matches || touchLayout.matches ? 0 : MOTION_MS);
     if (!touchLayout.matches && deck.index() !== previousIndex) {
       movementLocked = true;
       root.classList.add("is-moving");
       window.clearTimeout(movementFallback);
-      movementFallback = window.setTimeout(finishMovement, 660);
+      movementFallback = window.setTimeout(finishMovement, MOTION_MS + 40);
     }
     scheduleFit(step);
     if (touchLayout.matches) window.scrollTo(0, 0);
@@ -112,7 +127,11 @@
       pendingMove += delta;
       return;
     }
-    go(Math.max(0, Math.min(steps.length - 1, deck.index() + delta)), true);
+    const current = deck.index();
+    const target = ((current + delta) % steps.length + steps.length) % steps.length;
+    const completed = delta > 0 && current === steps.length - 1 && target === 0;
+    go(target, true);
+    if (completed) status.textContent = "Fin de la unidad. Regreso al inicio.";
   }
 
   function finishMovement() {
@@ -243,6 +262,7 @@
     document.body.classList.remove("map-view");
     mapVisible = false;
     mapToggle.setAttribute("aria-pressed", "false");
+    document.body.classList.toggle("is-reading", touchLayout.matches);
     go(deck.index(), false);
   });
 
@@ -255,6 +275,7 @@
   }
 
   const initial = window.location.hash ? document.getElementById(window.location.hash.slice(1)) : null;
+  document.body.classList.toggle("is-reading", touchLayout.matches);
   go(initial && initial.classList.contains("step") ? initial : 0, false);
   window.scrollTo(0, 0);
 })();

@@ -8,7 +8,6 @@
   const TITLE_FONT_FLOOR = 24.02;
   const KICKER_FONT_FLOOR = 8.02;
   const NUMBER_FONT_FLOOR = 10.02;
-  const PROVENANCE_FONT_FLOOR = 8.02;
   const BODY_FONT_FLOOR = 12.02;
   const SOURCE_FONT_FLOOR = 8.02;
   const TOLERANCE = 0.75;
@@ -31,10 +30,6 @@
       canvas.style.setProperty(
         "--fit-number-font-floor",
         `${(NUMBER_FONT_FLOOR / candidate).toFixed(4)}px`
-      );
-      canvas.style.setProperty(
-        "--fit-provenance-font-floor",
-        `${(PROVENANCE_FONT_FLOOR / candidate).toFixed(4)}px`
       );
       canvas.style.setProperty(
         "--fit-body-font-floor",
