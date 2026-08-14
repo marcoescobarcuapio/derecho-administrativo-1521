@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="author" content="Luis Montañez Escobar">
+  <meta name="description" content="Mapa mental y actividad de cierre de la Unidad 1 de Derecho Administrativo.">
+  <title>Mapa mental · Unidad 1 · Derecho Administrativo</title>
+  <style>
+    @font-face{font-family:Montserrat;src:url('../../runtime/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+    :root{--azul:#003d79;--azul-profundo:#002855;--oro:#c8a951;--papel:#f7f4eb;--blanco:#fff;--tinta:#102b4e;--linea:rgba(0,61,121,.22)}
+    *{box-sizing:border-box} html,body{margin:0;background:#dfe7ef;color:var(--tinta);font-family:Montserrat,Arial,sans-serif}
+    body{padding:24px} a{color:inherit;text-decoration-color:var(--oro);text-decoration-thickness:2px;text-underline-offset:3px}
+    .page{position:relative;width:11in;height:8.5in;margin:0 auto 24px;overflow:hidden;background:var(--papel);box-shadow:0 16px 42px rgba(0,40,85,.2);page-break-after:always}
+    .page::before{content:'';position:absolute;inset:0 0 auto;height:8px;background:linear-gradient(90deg,var(--azul) 0 78%,var(--oro) 78%)}
+    .masthead{position:absolute;inset:25px 42px auto;display:grid;grid-template-columns:1fr auto;align-items:end;padding-bottom:12px;border-bottom:1px solid var(--linea)}
+    .masthead p{margin:0;color:var(--azul);font-size:12px;font-weight:850;letter-spacing:.13em;text-transform:uppercase} .masthead span{color:var(--oro);font-size:12px;font-weight:850}
+    .folio{position:absolute;right:42px;bottom:23px;color:var(--azul);font-size:11px;font-weight:750} .folio b{color:var(--oro)}
+    .map-title{position:absolute;left:42px;top:74px;width:900px} .map-title h1{margin:0;color:var(--azul);font-size:37px;line-height:1;letter-spacing:-.035em} .map-title p{max-width:890px;margin:9px 0 0;font-size:14px;line-height:1.28}
+    .map{position:absolute;inset:170px 42px 52px}
+    .map-connectors{position:absolute;z-index:1;inset:0;width:100%;height:100%;overflow:visible} .map-connectors path{fill:none;stroke-width:5;stroke-linecap:round} .map-connectors circle{fill:var(--papel);stroke-width:4}
+    .center{position:absolute;z-index:5;left:50%;top:50%;width:220px;min-height:72px;display:grid;place-items:center;transform:translate(-50%,-50%);padding:12px 22px;border-radius:44px;background:var(--azul);color:var(--blanco);box-shadow:0 0 0 7px var(--papel),0 0 0 8px var(--oro);font-size:20px;font-weight:880;line-height:1.05;text-align:center}
+    .branch{position:absolute;z-index:2;width:43%;padding:0 8px} .branch-1{left:0;top:0} .branch-2{right:0;top:0} .branch-3{left:0;bottom:0} .branch-4{right:0;bottom:0}
+    .branch header{display:grid;grid-template-columns:58px 1fr;gap:12px;align-items:center} .branch-icon{display:grid;place-items:center;width:58px;height:58px;border:4px solid var(--azul);border-radius:50%;background:var(--papel);color:var(--azul)} .branch-icon svg{width:40px;height:40px} .branch-2 .branch-icon,.branch-3 .branch-icon{border-color:var(--oro);color:var(--oro)} .branch header b{color:var(--oro);font-size:16px} .branch h2{margin:1px 0 0;color:var(--azul);font-size:18px;line-height:1.12}
+    .branch ul{margin:10px 0 0 70px;padding:0;list-style:none;columns:2;column-gap:18px} .branch li{break-inside:avoid;margin:0 0 6px;padding-left:9px;border-left:3px solid var(--oro);font-size:12.8px;line-height:1.23} .branch li strong{color:var(--azul)}
+    .activity-title{position:absolute;left:55px;top:91px;width:640px} .eyebrow{margin:0 0 11px;color:var(--oro);font-size:15px;font-weight:900;letter-spacing:.18em;text-transform:uppercase} .activity-title h1{margin:0;color:var(--azul);font-size:46px;line-height:.98;letter-spacing:-.045em} .activity-title .prompt{margin:17px 0 0;padding-left:18px;border-left:6px solid var(--oro);color:var(--tinta);font-size:22px;font-weight:700;line-height:1.3}
+    .activity-icon{position:absolute;right:74px;top:91px;width:205px;height:205px;color:var(--azul);opacity:.19}
+    .activity-grid{position:absolute;inset:335px 55px 74px;display:grid;grid-template-columns:7fr 5fr;gap:30px}
+    .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px} .step{padding:17px 18px;border-top:6px solid var(--azul);background:#fff} .step:nth-child(2),.step:nth-child(3){border-color:var(--oro)} .step strong{display:block;margin-bottom:7px;color:var(--azul);font-size:20px} .step p{margin:0;font-size:15px;line-height:1.37}
+    .criteria{padding:22px 24px;background:var(--azul);color:#fff} .criteria h2{margin:0 0 14px;color:var(--oro);font-size:24px} .criteria ul{margin:0;padding-left:20px} .criteria li{margin-bottom:10px;font-size:15px;line-height:1.35} .criteria .sources{margin-top:16px;padding-top:13px;border-top:1px solid rgba(255,255,255,.25);font-size:13px;line-height:1.4}
+    .refs-title{position:absolute;left:48px;top:82px} .refs-title h1{margin:0;color:var(--azul);font-size:42px;letter-spacing:-.035em} .refs-title p{margin:8px 0 0;font-size:15px}
+    .references{position:absolute;inset:160px 62px 55px;margin:0;padding:0;list-style:none} .references li{margin:0 0 15px;padding:0 0 13px;border-bottom:1px solid var(--linea);font-size:16px;line-height:1.38} .references strong{color:var(--azul)} .colophon{position:absolute;left:48px;bottom:20px;color:var(--azul);font-size:10px;font-weight:700}
+    @media(max-width:980px){body{padding:0}.page{width:100vw;height:auto;min-height:100vh;margin:0;box-shadow:none;transform-origin:top left}}
+    @media print{@page{size:letter landscape;margin:0}html,body{background:#fff}body{padding:0}.page{margin:0;box-shadow:none}}
+  </style>
+</head>
+<body>
+  <section class="page" aria-labelledby="mapa-titulo">
+    <header class="masthead"><p>Derecho Administrativo · 1521 · Unidad 1</p><span>Mapa mental de síntesis</span></header>
+    <div class="map-title"><h1 id="mapa-titulo">El Derecho Administrativo</h1><p>Las y los alumnos identificarán el concepto, esencia, características, fuentes, principios y ubicación del Derecho Administrativo, así como su relación con otras ramas de la ciencia jurídica.</p></div>
+    <div class="map"><svg class="map-connectors" viewBox="0 0 1000 470" preserveAspectRatio="none" aria-hidden="true"><path d="M415 235C240 235 70 180 35 45" stroke="#003d79"/><path d="M585 235C580 175 580 105 585 45" stroke="#c8a951"/><path d="M415 235C240 235 70 305 35 420" stroke="#c8a951"/><path d="M585 235C580 300 580 365 585 420" stroke="#003d79"/><circle cx="35" cy="45" r="7" stroke="#003d79"/><circle cx="585" cy="45" r="7" stroke="#c8a951"/><circle cx="35" cy="420" r="7" stroke="#c8a951"/><circle cx="585" cy="420" r="7" stroke="#003d79"/></svg><div class="center">Derecho<br>administrativo</div>
+      <section class="branch branch-1">
+        <header><span class="branch-icon"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="40" cy="42" r="25"/><path d="M40 27v17l12 7M17 20h18M22 13l-7 7 7 7"/></svg></span><div><b>1.1</b><h2>Antecedentes y Generalidades del Derecho Administrativo</h2></div></header>
+        <ul><li><strong>1.1.1</strong> Evolución del Derecho Administrativo</li><li><strong>1.1.2</strong> Diferencias entre administración pública y privada</li><li><strong>1.1.3</strong> Concepto de Derecho Administrativo</li><li><strong>1.1.4</strong> Elementos del Derecho Administrativo</li><li><strong>1.1.5</strong> Características del Derecho Administrativo</li><li><strong>1.1.6</strong> Fundamentos constitucionales</li></ul>
+      </section>
+    
+      <section class="branch branch-2">
+        <header><span class="branch-icon"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 19h23c8 0 12 4 12 12v38c0-8-4-12-12-12H10V19Zm60 0H57c-8 0-12 4-12 12v38c0-8 4-12 12-12h13V19Z"/><path d="M19 31h15M19 40h12M58 31h4M58 40h4"/></svg></span><div><b>1.2</b><h2>Las fuentes del Derecho Administrativo</h2></div></header>
+        <ul><li><strong>1.2.1</strong> Concepto de fuentes del Derecho Administrativo</li><li><strong>1.2.2</strong> Clasificaciones de las fuentes del Derecho Administrativo</li><li><strong>1.2.3</strong> Análisis de las fuentes formales del Derecho Administrativo</li><li><strong>1.2.4</strong> Otras fuentes del Derecho Administrativo</li></ul>
+      </section>
+    
+      <section class="branch branch-3">
+        <header><span class="branch-icon"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="40" cy="40" r="10"/><circle cx="13" cy="18" r="7"/><circle cx="67" cy="18" r="7"/><circle cx="13" cy="63" r="7"/><circle cx="67" cy="63" r="7"/><path d="m19 23 13 10m29-10L48 33M19 58l13-10m29 10L48 48"/></svg></span><div><b>1.3</b><h2>La relación con otras disciplinas jurídicas y no jurídicas</h2></div></header>
+        <ul><li><strong>1.3.1</strong> Relación jurídica del Derecho Administrativo con ramas del Derecho Privado</li><li><strong>1.3.2</strong> Relaciones del Derecho Administrativo con otras ramas del Derecho Público</li><li><strong>1.3.3</strong> Relación jurídica del Derecho Administrativo con otras disciplinas no jurídicas</li></ul>
+      </section>
+    
+      <section class="branch branch-4">
+        <header><span class="branch-icon"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 9v55M17 22h46M22 22 10 46h24L22 22Zm36 0L46 46h24L58 22ZM26 65h28M19 73h42"/><path d="M10 46c4 8 20 8 24 0m12 0c4 8 20 8 24 0"/></svg></span><div><b>1.4</b><h2>Los principios del Derecho Administrativo</h2></div></header>
+        <ul><li><strong>1.4.1</strong> Los principios del orden jurídico general</li><li><strong>1.4.2</strong> La aplicación de los principios del orden jurídico general al derecho administrativo</li><li><strong>1.4.3</strong> Fundamento constitucional de los principios jurídicos aplicables al Derecho Administrativo</li><li><strong>1.4.4</strong> Los derechos y obligaciones de los administrados</li><li><strong>1.4.5</strong> Las facultades y responsabilidades de la administración</li></ul>
+      </section>
+    </div>
+    <div class="folio"><b>01</b> / 04</div>
+  </section>
+
+  <section class="page" aria-labelledby="actividad-titulo">
+    <header class="masthead"><p>Derecho Administrativo · 1521 · Unidad 1</p><span>Actividad de cierre</span></header>
+    <div class="activity-title"><p class="eyebrow">Actividad</p><h1 id="actividad-titulo">Elabora tu propio mapa mental</h1><p class="prompt">Pregunta guía: <strong>¿Qué entiendo ahora por derecho administrativo?</strong></p></div>
+    <svg class="activity-icon" viewBox="0 0 160 160" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="80" cy="80" r="18"/><circle cx="28" cy="35" r="12"/><circle cx="132" cy="35" r="12"/><circle cx="28" cy="125" r="12"/><circle cx="132" cy="125" r="12"/><path d="M44 45 66 68M116 45 94 68M44 115 66 92M116 115 94 92"/></svg>
+    <div class="activity-grid">
+      <div class="steps">
+        <article class="step"><strong>1 · Centro</strong><p>Escribe tu definición personal de derecho administrativo después de estudiar la unidad.</p></article>
+        <article class="step"><strong>2 · Ramas</strong><p>Organiza al menos cuatro ramas: antecedentes, fuentes, relaciones y principios.</p></article>
+        <article class="step"><strong>3 · Conexiones</strong><p>Relaciona conceptos, normas, derechos de los administrados y responsabilidades públicas.</p></article>
+        <article class="step"><strong>4 · Sustento</strong><p>Incluye citas breves y una explicación final de 80 a 120 palabras sobre tu comprensión.</p></article>
+      </div>
+      <aside class="criteria"><h2>Elementos mínimos</h2><ul><li>Conceptos expresados con tus propias palabras.</li><li>Jerarquía visual clara y conexiones justificadas.</li><li>Al menos tres fuentes de la unidad.</li><li>Citas en el mapa y referencias completas en APA 7.</li><li>Legibilidad, ortografía y uso responsable del espacio.</li></ul><p class="sources">Consulta sugerida: <a href="#fuente-01">Fuente 01</a>, <a href="#fuente-02">Fuente 02</a>, <a href="#fuente-05">Fuente 05</a>, <a href="#fuente-08">Fuente 08</a> y <a href="#fuente-10">Fuente 10</a>.</p></aside>
+    </div>
+    <div class="folio"><b>02</b> / 04</div>
+  </section>
+
+  <section class="page" aria-labelledby="referencias-titulo">
+    <header class="masthead"><p>Derecho Administrativo · 1521 · Unidad 1</p><span>Fuentes de consulta</span></header>
+    <div class="refs-title"><h1 id="referencias-titulo">Referencias</h1><p>Las referencias conservan el enlace a la versión pública consultable.</p></div>
+    <ol class="references"><li id="fuente-01"><a href="https://archivos.juridicas.unam.mx/www/bjv/libros/9/4455/7.pdf"><strong>Fuente 01</strong> · Fernández Ruiz, J. (2016). Cuestiones preliminares del derecho administrativo. En Derecho administrativo (pp. 25–87). Universidad Nacional Autónoma de México, Instituto de Investigaciones Jurídicas; Instituto Nacional de Estudios Históricos de las Revoluciones de México. https://archivos.juridicas.unam.mx/www/bjv/libros/9/4455/7.pdf</a></li><li id="fuente-02"><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf"><strong>Fuente 02</strong> · Cámara de Diputados del H. Congreso de la Unión. (1917). Constitución Política de los Estados Unidos Mexicanos (últimas reformas publicadas el 2 de junio de 2026). Diario Oficial de la Federación. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf</a></li><li id="fuente-03"><a href="https://archivos.juridicas.unam.mx/www/bjv/libros/9/4455/13.pdf"><strong>Fuente 03</strong> · Fernández Ruiz, J. (2016). El control de la administración pública. En Derecho administrativo (pp. 269–307). Universidad Nacional Autónoma de México, Instituto de Investigaciones Jurídicas; Instituto Nacional de Estudios Históricos de las Revoluciones de México. https://archivos.juridicas.unam.mx/www/bjv/libros/9/4455/13.pdf</a></li><li id="fuente-04"><a href="https://archivos.juridicas.unam.mx/www/bjv/libros/9/4455/8.pdf"><strong>Fuente 04</strong> · Fernández Ruiz, J. (2016). La administración pública. En Derecho administrativo (pp. 89–128). Universidad Nacional Autónoma de México, Instituto de Investigaciones Jurídicas; Instituto Nacional de Estudios Históricos de las Revoluciones de México. https://archivos.juridicas.unam.mx/www/bjv/libros/9/4455/8.pdf</a></li><li id="fuente-05"><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPA.pdf"><strong>Fuente 05</strong> · Cámara de Diputados del H. Congreso de la Unión. (1994). Ley Federal de Procedimiento Administrativo (última reforma publicada el 14 de noviembre de 2025). Diario Oficial de la Federación. https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPA.pdf</a></li></ol>
+    <div class="folio"><b>03</b> / 04</div>
+  </section>
+
+  <section class="page" aria-labelledby="referencias-titulo-2">
+    <header class="masthead"><p>Derecho Administrativo · 1521 · Unidad 1</p><span>Fuentes de consulta</span></header>
+    <div class="refs-title"><h1 id="referencias-titulo-2">Referencias</h1><p>Continuación. Enlaces directos a las versiones públicas consultables.</p></div>
+    <ol class="references" start="6"><li id="fuente-06"><a href="https://archivos.juridicas.unam.mx/www/bjv/libros/6/2688/10.pdf"><strong>Fuente 06</strong> · Nava Negrete, A. (1975). Derecho administrativo. En Las humanidades en el siglo XX: I. El derecho (pp. 229–242). Universidad Nacional Autónoma de México. https://archivos.juridicas.unam.mx/www/bjv/libros/6/2688/10.pdf</a></li><li id="fuente-07"><a href="https://biblio.juridicas.unam.mx/bjv/detalle-libro/443-los-principios-generales-del-derecho-administrativo"><strong>Fuente 07</strong> · Jéze, G. (1969). Los principios generales del derecho administrativo. Editorial Reus. https://biblio.juridicas.unam.mx/bjv/detalle-libro/443-los-principios-generales-del-derecho-administrativo</a></li><li id="fuente-08"><a href="https://biblio.juridicas.unam.mx/bjv/detalle-libro/1422-los-derechos-administrativos-del-hombre-y-del-ciudadano-posibilidades-de-aplicacion-en-mexico"><strong>Fuente 08</strong> · Pontifes Martínez, A., &amp; Poblano Chávez, D. (2003). Los derechos administrativos del hombre y del ciudadano. Posibilidades de aplicación en México. Instituto de Investigaciones Jurídicas, Universidad Nacional Autónoma de México. https://biblio.juridicas.unam.mx/bjv/detalle-libro/1422-los-derechos-administrativos-del-hombre-y-del-ciudadano-posibilidades-de-aplicacion-en-mexico</a></li><li id="fuente-09"><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRPE.pdf"><strong>Fuente 09</strong> · Cámara de Diputados del H. Congreso de la Unión. (2004). Ley Federal de Responsabilidad Patrimonial del Estado (última reforma publicada el 29 de diciembre de 2023). Diario Oficial de la Federación. https://www.diputados.gob.mx/LeyesBiblio/pdf/LFRPE.pdf</a></li><li id="fuente-10"><a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA.pdf"><strong>Fuente 10</strong> · Cámara de Diputados del H. Congreso de la Unión. (2016). Ley General de Responsabilidades Administrativas (última reforma publicada el 15 de diciembre de 2025). Diario Oficial de la Federación. https://www.diputados.gob.mx/LeyesBiblio/pdf/LGRA.pdf</a></li></ol>
+    <p class="colophon">Autor del documento: Luis Montañez Escobar</p><div class="folio"><b>04</b> / 04</div>
+  </section>
+</body>
+</html>
