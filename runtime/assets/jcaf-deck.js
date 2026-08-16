@@ -8,7 +8,7 @@
   if (!hint) {
     hint = document.createElement('p');
     hint.className = 'orientation-hint';
-    hint.textContent = 'Gira el dispositivo para presentar en formato 16:9.';
+    hint.textContent = 'Gira el dispositivo si prefieres verla en formato 16:9.';
     const header = document.querySelector('.institutional-header');
     (header || body).insertAdjacentElement(header ? 'afterend' : 'afterbegin', hint);
   }
