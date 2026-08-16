@@ -1,7 +1,8 @@
 (() => {
   const body = document.body;
   const deck = document.querySelector('.deck');
-  if (!body || !deck) return;
+  const stage = document.querySelector('.stage');
+  if (!body || !deck || !stage) return;
 
   let hint = document.querySelector('.orientation-hint');
   if (!hint) {
@@ -13,18 +14,22 @@
   }
 
   const update = () => {
-    const portrait = window.innerWidth <= 820 && window.innerHeight >= window.innerWidth;
-    body.dataset.viewMode = portrait ? 'reading' : 'presentation';
-    body.classList.toggle('reading-mode', portrait);
-    body.classList.toggle('presentation-mode', !portrait);
+    const portrait = window.innerHeight >= window.innerWidth;
+    const screenShortSide = Math.min(
+      window.screen?.width || window.innerWidth,
+      window.screen?.height || window.innerHeight,
+    );
+    const phonePortrait = portrait && window.innerWidth <= 600 && screenShortSide < 700;
+    body.dataset.viewMode = phonePortrait ? 'reading' : 'presentation';
+    body.classList.toggle('reading-mode', phonePortrait);
+    body.classList.toggle('presentation-mode', !phonePortrait);
 
-    if (portrait) {
+    if (phonePortrait) {
       document.documentElement.style.setProperty('--deck-scale', '1');
     } else {
-      const compactLandscape = window.innerHeight <= 500;
-      const availableWidth = window.innerWidth - (compactLandscape ? 12 : 0);
-      const reservedHeight = compactLandscape ? 58 : 126;
-      const availableHeight = window.innerHeight - reservedHeight;
+      const stageBounds = stage.getBoundingClientRect();
+      const availableWidth = Math.max(stageBounds.width - 24, 1);
+      const availableHeight = Math.max(stageBounds.height - 16, 1);
       const scale = Math.min(availableWidth / 1280, availableHeight / 720, 1);
       document.documentElement.style.setProperty('--deck-scale', String(Math.max(scale, 0.1)));
     }

@@ -6,7 +6,14 @@ body[data-view-mode="presentation"] .literal-source[data-progressive="true"] .so
 body[data-view-mode="presentation"] .literal-source[data-progressive="true"] .source-fragment p{font-size:clamp(25px,2.15vw,32px)!important;line-height:1.38!important}
 @keyframes jcaf-concept-zoom{from{opacity:.15;transform:scale(.975) translateX(10px)}to{opacity:1;transform:scale(1) translateX(0)}}
 
-@media (max-width:820px) and (orientation:portrait){
+/* Presentación 16:9: el lienzo se centra por su geometría transformada. */
+body[data-view-mode="presentation"] .stage{position:fixed;display:block;overflow:hidden}
+body[data-view-mode="presentation"] .deck{
+  position:absolute;left:50%;top:50%;width:1280px;height:720px;
+  transform:translate(-50%,-50%) scale(var(--deck-scale,1));transform-origin:center;
+}
+
+@media (max-width:600px) and (max-device-width:699px) and (orientation:portrait){
   html,body{width:100%;max-width:100%;overflow-x:hidden!important;overflow-y:auto!important}
   body{padding-bottom:72px}
   body[data-view-mode="reading"] .orientation-hint{position:relative;z-index:36;display:block;margin:0;padding:9px 16px;background:#C8A951;color:#002855;font-size:14px;font-weight:800;text-align:center}

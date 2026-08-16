@@ -27,7 +27,16 @@
   document.querySelector('[data-action="next"]').addEventListener('click',()=>show(current+1));
   document.querySelector('[data-action="map"]').addEventListener('click',()=>map.showModal());
   document.querySelector('[data-action="close-map"]').addEventListener('click',()=>map.close());
-  map.querySelectorAll('[data-slide-target]').forEach(button=>button.addEventListener('click',()=>{show(Number(button.dataset.slideTarget));map.close()}));
+  document.querySelectorAll('[data-slide-target]').forEach(button=>button.addEventListener('click',()=>{
+    show(Number(button.dataset.slideTarget));
+    if(map.open)map.close();
+  }));
+  const references=document.querySelector('[data-action="references"]');
+  if(references)references.addEventListener('click',event=>{
+    event.preventDefault();
+    const firstReference=slides.findIndex(slide=>slide.id==='referencias-1');
+    show(firstReference<0?slides.length-1:firstReference);
+  });
   addEventListener('keydown',event=>{
     if(event.key==='ArrowLeft'||event.key==='PageUp')show(current-1);
     if(event.key==='ArrowRight'||event.key==='PageDown'||event.key===' ')show(current+1);
@@ -35,4 +44,11 @@
     if(event.key==='End')show(slides.length-1);
   });
   addEventListener('hashchange',fromHash);addEventListener('resize',fit);fit();fromHash();
+  const updateConceptProgress=slide=>{
+    const current=slide.querySelector('.concept-progress-current');
+    if(current)current.textContent=String(Number(slide.dataset.fragmentIndex||0)+1);
+  };
+  document.querySelectorAll('.slide[data-progressive="true"]').forEach(updateConceptProgress);
+  new MutationObserver(records=>records.forEach(record=>updateConceptProgress(record.target)))
+    .observe(document.querySelector('#deck'),{subtree:true,attributes:true,attributeFilter:['data-fragment-index']});
 })();
