@@ -6,6 +6,8 @@
   const deck = window.impress("contenido");
   deck.init();
   const steps = deck.steps ? deck.steps() : [];
+  const mainSteps = steps.filter(function (step) { return !step.hasAttribute('data-glossary-slide'); });
+  const glossarySteps = steps.filter(function (step) { return step.hasAttribute('data-glossary-slide'); });
   const home = document.getElementById("home");
   const previous = document.getElementById("previous");
   const next = document.getElementById("next");
@@ -83,10 +85,11 @@
   function announce(step) {
     if (!step) return;
     const heading = step.querySelector("h1, h2");
-    const position = deck.index() + 1;
-    progressText.textContent = position + " / " + steps.length;
-    progressFill.style.width = ((position / steps.length) * 100) + "%";
-    status.textContent = "Diapositiva " + position + " de " + steps.length + ": " + (heading ? heading.textContent : step.id);
+    const route = step.hasAttribute('data-glossary-slide') ? glossarySteps : mainSteps;
+    const position = route.indexOf(step) + 1;
+    progressText.textContent = (route === glossarySteps ? 'Glosario ' : '') + position + " / " + route.length;
+    progressFill.style.width = ((position / route.length) * 100) + "%";
+    status.textContent = (route === glossarySteps ? "Glosario " : "Diapositiva ") + position + " de " + route.length + ": " + (heading ? heading.textContent : step.id);
   }
 
   function go(target, moveFocus) {
@@ -127,10 +130,12 @@
       pendingMove += delta;
       return;
     }
-    const current = deck.index();
-    const target = ((current + delta) % steps.length + steps.length) % steps.length;
-    const completed = delta > 0 && current === steps.length - 1 && target === 0;
-    go(target, true);
+    const currentStep = steps[deck.index()];
+    const route = currentStep && currentStep.hasAttribute('data-glossary-slide') ? glossarySteps : mainSteps;
+    const current = Math.max(0, route.indexOf(currentStep));
+    const target = ((current + delta) % route.length + route.length) % route.length;
+    const completed = delta > 0 && current === route.length - 1 && target === 0;
+    go(route[target], true);
     if (completed) status.textContent = "Fin de la unidad. Regreso al inicio.";
   }
 
@@ -176,7 +181,7 @@
     if (!mapVisible) go(deck.index(), true);
   }
 
-  home.addEventListener("click", function () { go(0, true); });
+  home.addEventListener("click", function () { go(mainSteps[0], true); });
   previous.addEventListener("click", function () { move(-1); });
   next.addEventListener("click", function () { move(1); });
   mapToggle.addEventListener("click", function () { toggleMap(); });
@@ -222,7 +227,7 @@
     if (forward.includes(event.key)) { event.preventDefault(); move(1); }
     else if (backward.includes(event.key)) { event.preventDefault(); move(-1); }
     else if (event.key === "Home") { event.preventDefault(); go(0, true); }
-    else if (event.key === "End") { event.preventDefault(); go(steps.length - 1, true); }
+    else if (event.key === "End") { event.preventDefault(); go(mainSteps[mainSteps.length - 1], true); }
     else if (event.key === "Escape") {
       event.preventDefault();
       if (slideIndex && slideIndex.open) closeIndex();

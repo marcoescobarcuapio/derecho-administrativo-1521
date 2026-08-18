@@ -3,7 +3,7 @@
   <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
     <path stroke="#003D79" d="M15 9h25l9 9v37H15z"/>
     <path stroke="#003D79" d="M40 9v10h9M23 29h18M23 37h11"/>
-    <circle cx="41" cy="43" r="8" stroke="#C8A951"/>
-    <path stroke="#C8A951" d="m47 49 6 6"/>
+    <circle cx="41" cy="43" r="8" stroke="#D59F0F"/>
+    <path stroke="#D59F0F" d="m47 49 6 6"/>
   </g>
 </svg>
