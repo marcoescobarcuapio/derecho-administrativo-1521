@@ -771,6 +771,19 @@ body > footer { position: fixed; z-index: 20; left: 24px; bottom: 14px; color: v
 .evidence-map strong { font-size: .78rem; }
 .evidence-map p { font-size: .73rem; }
 
+.assessment-date {
+  display: block;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 61, 121, .22);
+  color: var(--navy);
+  font-size: .67rem;
+  font-weight: 800;
+  line-height: 1.28;
+}
+.partials-slide .assessment-date { color: var(--navy); }
+.final-project-evidence .assessment-date { font-size: .59rem; }
+
 .opening-questions article strong {
   display: inline-flex;
   align-items: center;
@@ -900,6 +913,8 @@ body > footer { position: fixed; z-index: 20; left: 24px; bottom: 14px; color: v
   .weights-five dd { font-size: 1.1rem; }
   .evidence-map p,
   .unit-one-six p { font-size: .52rem; line-height: 1.18; }
+  .assessment-date { margin-top: 4px; padding-top: 4px; font-size: .49rem; }
+  .final-project-evidence .assessment-date { font-size: .45rem; }
   .opening-questions article strong {
     width: 1.45rem;
     height: 1.45rem;

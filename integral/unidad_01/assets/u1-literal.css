@@ -79,6 +79,45 @@ dialog{width:min(920px,calc(100vw - 40px));max-height:76vh;padding:0;border:0;bo
   --SH-P: 0 10px 32px rgba(0,61,121,.13);
 }
 
+/* Complementos constitucionales: artículos 14, 109 y antecedente del 113. */
+.constitutional-supplement{
+  position:absolute;z-index:9;left:4.6rem;right:15rem;top:16.5rem;
+  padding:1.35rem 1.55rem;border-left:.55rem solid var(--unam-gold);
+  border-radius:0 .75rem .75rem 0;background:#f2f6f9;
+  box-shadow:0 1.1rem 2.7rem rgba(0,61,121,.12);color:var(--unam-blue);
+}
+.constitutional-supplement .supplement-kicker{
+  margin:0 0 .45rem;color:#765900;font-size:.78rem;font-weight:900;
+  letter-spacing:.11em;text-transform:uppercase;
+}
+.constitutional-supplement h3{margin:0 0 .75rem;font-size:2rem;line-height:1.08}
+.constitutional-supplement p{margin:0 0 .62rem;font-size:1rem;line-height:1.38}
+.constitutional-supplement a{
+  display:inline-block;margin-top:.2rem;color:var(--unam-blue);
+  font-size:.82rem;font-weight:850;
+}
+.constitutional-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+.constitutional-points p{
+  padding:.75rem;background:#fff;border-top:.3rem solid var(--unam-gold);
+  font-size:.88rem;
+}
+.constitutional-supplement+.pictogram-zone{
+  position:absolute!important;z-index:8!important;right:3.7rem!important;top:20rem!important;
+  width:8rem!important;height:8rem!important;color:var(--unam-blue)!important;opacity:.16!important;
+}
+@media (max-width:820px) and (orientation:portrait){
+  .constitutional-supplement{
+    position:relative!important;inset:auto!important;width:auto!important;
+    margin:0!important;padding:1.1rem 1.2rem!important;
+  }
+  .constitutional-supplement h3{font-size:1.7rem!important}
+  .constitutional-supplement p{font-size:1.02rem!important}
+  .constitutional-points{grid-template-columns:1fr!important}
+  .constitutional-supplement+.pictogram-zone{
+    position:relative!important;inset:auto!important;margin:.5rem 0 0 auto!important;
+  }
+}
+
 .top-bar{position:absolute;z-index:20;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--P280-osc),var(--P280),var(--P872))}
 .dpa-page{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;padding:28px 60px 0;color:var(--TXT)}
 .dpa-head{display:flex;align-items:flex-start;justify-content:space-between;flex:0 0 auto;margin-bottom:14px;padding-right:100px}
